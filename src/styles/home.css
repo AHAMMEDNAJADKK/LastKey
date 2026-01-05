@@ -1,0 +1,80 @@
+.hero{
+    height:90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:0 10%;
+
+}
+.hero h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 18px;
+    color: #ccc;
+    max-width: 700px;
+
+}
+.hero-actions {
+    margin-top: 30px;
+}
+
+.hero-actions button {
+    margin:0 10px
+}
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 80px 8%;
+  background: #111;
+}
+
+.step {
+  border: 1px solid #222;
+  padding: 30px;
+}
+
+.step h3 {
+  margin-bottom: 10px;
+}
+.store {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.store ul {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.store li {
+  margin: 10px 0;
+  color: #ccc;
+}
+.security {
+  padding: 80px 8%;
+  background: #000;
+  text-align: center;
+}
+.cta {
+  padding: 80px 8%;
+  text-align: center;
+  border-top: 1px solid #222;
+}
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+}
