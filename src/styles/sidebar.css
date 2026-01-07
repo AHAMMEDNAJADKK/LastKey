@@ -1,0 +1,21 @@
+.sidebar {
+  width: 240px;
+  background: #000;
+  border-right: 1px solid #222;
+  padding: 30px 20px;
+}
+
+.sidebar .logo {
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+
+.sidebar nav a {
+  display: block;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.sidebar nav a:hover {
+  color: #fff;
+}
