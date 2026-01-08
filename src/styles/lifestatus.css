@@ -1,0 +1,19 @@
+.life-status {
+  padding: 40px;
+}
+
+.status-card {
+  margin-top: 30px;
+  padding: 30px;
+  background: #111;
+  border: 1px solid #222;
+  max-width: 400px;
+}
+
+.alive {
+  color: #4caf50;
+}
+
+.status-card button {
+  margin-top: 20px;
+}

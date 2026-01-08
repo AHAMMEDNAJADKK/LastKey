@@ -6,6 +6,8 @@ import Dashboard from "./pages/Dashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Vault from "./pages/Vault";
 import Nominees from "./pages/Nominees";
+import LifeStatus from "./pages/LifeStatus";
+import TrustedContacts from "./pages/TrustedContacts";
 
 function App() {
   return (
@@ -38,6 +40,24 @@ function App() {
             </ProtectedRoute>
           }
         />
+        <Route
+          path="/life-status"
+          element={
+            <ProtectedRoute>
+              <LifeStatus />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/trusted-contacts"
+          element={
+            <ProtectedRoute>
+              <TrustedContacts />
+            </ProtectedRoute>
+          }
+        />
+
       </Routes>
     </BrowserRouter>
   );

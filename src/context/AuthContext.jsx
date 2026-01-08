@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+
 import { createContext,useState} from "react";
 
 export const AuthContext= createContext();
@@ -19,7 +19,7 @@ const logout = ()=>{
 
 return(
     <AuthContext.Provider value={{user,login,logout}}>
-        {Children}
+        {children}
     </AuthContext.Provider>
 )
 };
