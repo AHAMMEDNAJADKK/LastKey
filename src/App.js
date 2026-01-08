@@ -8,6 +8,9 @@ import Vault from "./pages/Vault";
 import Nominees from "./pages/Nominees";
 import LifeStatus from "./pages/LifeStatus";
 import TrustedContacts from "./pages/TrustedContacts";
+import Assets from "./pages/Assets";
+import "./styles/global.css"
+import Landing from "./pages/Landing";
 
 function App() {
   return (
@@ -16,6 +19,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/" element={<Landing />} />
+
         <Route
           path="/dashboard"
           element={
@@ -54,6 +59,14 @@ function App() {
           element={
             <ProtectedRoute>
               <TrustedContacts />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/assets"
+          element={
+            <ProtectedRoute>
+              <Assets />
             </ProtectedRoute>
           }
         />

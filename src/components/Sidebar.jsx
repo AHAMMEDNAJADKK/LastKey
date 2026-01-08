@@ -16,6 +16,8 @@ export default function Sidebar() {
                 <Link to="/nominees">Nominees</Link>
                 <Link to="/trusted">Trusted Contacts</Link>
                 <Link to="/status">Life Status</Link>
+                <a href="/assets">Assets</a>
+
             </nav>
             const {logout} = useContext(AuthContext);
 

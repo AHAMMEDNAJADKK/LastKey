@@ -1,21 +1,30 @@
 .sidebar {
-  width: 240px;
-  background: #000;
-  border-right: 1px solid #222;
-  padding: 30px 20px;
+  width: 260px;
+  height: 100vh;
+  background: #0f0f0f;
+  border-right: 1px solid var(--border);
+  padding: 24px;
+  position: fixed;
 }
 
-.sidebar .logo {
-  margin-bottom: 40px;
-  font-size: 22px;
+.sidebar h2 {
+  margin-bottom: 30px;
+  font-weight: 700;
 }
 
 .sidebar nav a {
   display: block;
-  margin-bottom: 20px;
-  color: #ccc;
+  padding: 12px 0;
+  font-size: 14px;
+  color: var(--text-muted);
 }
 
 .sidebar nav a:hover {
-  color: #fff;
+  color: var(--text-main);
+}
+
+.user-box {
+  position: absolute;
+  bottom: 24px;
+  width: calc(100% - 48px);
 }
